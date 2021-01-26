@@ -1,0 +1,6 @@
+c:\users\zehra\onedrive\documents\visual studio 2015\Projects\GameOperations\GameOperations\bin\Debug\GameOperations.exe.config
+C:\Users\zehra\OneDrive\Documents\Visual Studio 2015\Projects\GameOperations\GameOperations\bin\Debug\GameOperations.exe
+C:\Users\zehra\OneDrive\Documents\Visual Studio 2015\Projects\GameOperations\GameOperations\bin\Debug\GameOperations.pdb
+C:\Users\zehra\OneDrive\Documents\Visual Studio 2015\Projects\GameOperations\GameOperations\obj\Debug\GameOperations.csprojResolveAssemblyReference.cache
+C:\Users\zehra\OneDrive\Documents\Visual Studio 2015\Projects\GameOperations\GameOperations\obj\Debug\GameOperations.exe
+C:\Users\zehra\OneDrive\Documents\Visual Studio 2015\Projects\GameOperations\GameOperations\obj\Debug\GameOperations.pdb
