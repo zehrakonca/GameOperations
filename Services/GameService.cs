@@ -31,13 +31,13 @@ namespace GameOperations.Services
             int i = 1;
             foreach (Game game in games)
             {
-                Console.WriteLine("______________________________");
+                Console.WriteLine("_____________________________________");
                 Console.WriteLine("{0} . Oyunun Adı: {1}\n" +
                                   "Oyunun Yayıncısı: {2}\n" +
                                   "Oyunun fiyatı   : {3} TRY" ,
                                   i, game.gameName, game.gamePublisher,
                                   game.gamePrice);
-                Console.WriteLine("______________________________");
+                Console.WriteLine("_____________________________________");
                 i += 1;
             }
         }

@@ -10,12 +10,12 @@ namespace GameOperations.Campaign
 {
     class Student : ICampaignService
     {
-        public void CalculateCampaign(IGame game)
+        public void CalculateCampaign(ICampaignService campaign, Game game)
         {
-            game.PriceAfter = game.Price - game.Price * (0.50);
+            game.gamePriceAfter = game.gamePrice - game.gamePrice * (0.50);
             Console.WriteLine("{0} isimli oyuna Öğrenci kampanyası uygulandı.\n" +
-                             "Ürünün Eski Fiyatı {1} ----\n" +
-                             "Ürünün Yeni fiyatı : {2} TRY", game.Name, game.Price, game.PriceAfter);
+                              "Ürünün Eski Fiyatı : {1} TRY\n" +
+                              "Ürünün Yeni fiyatı : {2} TRY", game.gameName, game.gamePrice, game.gamePriceAfter);
         }
     }
 }

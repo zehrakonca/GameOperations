@@ -43,14 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\ICampaignService.cs" />
     <Compile Include="Interfaces\IGameService.cs" />
+    <Compile Include="Interfaces\IOrderServices.cs" />
     <Compile Include="Interfaces\IUserServices.cs" />
     <Compile Include="Interfaces\IUserValidationService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Property\Game.cs" />
     <Compile Include="Property\User.cs" />
+    <Compile Include="Services\BlackFriday.cs" />
     <Compile Include="Services\GameService.cs" />
+    <Compile Include="Services\NewYearDiscount.cs" />
+    <Compile Include="Services\OrderServices.cs" />
+    <Compile Include="Services\Student.cs" />
     <Compile Include="Services\UserServices.cs" />
     <Compile Include="Services\UserValidationService.cs" />
   </ItemGroup>
