@@ -32,9 +32,9 @@ namespace GameOperations.Services
             foreach (Game game in games)
             {
                 Console.WriteLine("_____________________________________");
-                Console.WriteLine("{0} . Oyunun Adı: {1}\n" +
-                                  "Oyunun Yayıncısı: {2}\n" +
-                                  "Oyunun fiyatı   : {3} TRY" ,
+                Console.WriteLine("{0} . Oyunun Adı   : {1}\n" +
+                                  "Oyunun Yayıncısı : {2}\n" +
+                                  "Oyunun fiyatı    : {3} TRY" ,
                                   i, game.gameName, game.gamePublisher,
                                   game.gamePrice);
                 Console.WriteLine("_____________________________________");

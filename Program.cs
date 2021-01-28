@@ -32,11 +32,28 @@ namespace GameOperations
                 gamePrice = 100,
                 gamePublisher = "Shark Games"
             };
+            Game game2 = new Game()
+            {
+                ID = 2,
+                gameName = "PUBG Desktop",
+                gamePrice = 45,
+                gamePublisher = "PUBG Corporation, Krafton, xFAIRx"
+            };
+            Game game3 = new Game()
+            {
+                ID = 3,
+                gameName = "Assassin's Creed Valhalla",
+                gamePrice = 223.27,
+                gamePublisher = "UBISOFT"
+            };
+
 
             userServices.Add(user1);
             gameServices.Add(game1);
+            gameServices.Add(game2);
+            gameServices.Add(game3);
             ICampaignService campaign = new BlackFriday();
-            campaign.CalculateCampaign(campaign,game1);
+            campaign.CalculateCampaign(campaign,game3);
 
 
             OrderServices orderService = new OrderServices();
