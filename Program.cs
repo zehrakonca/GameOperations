@@ -1,4 +1,6 @@
-﻿using GameOperations.Property;
+﻿using GameOperations.Campaign;
+using GameOperations.Interfaces;
+using GameOperations.Property;
 using GameOperations.Services;
 using System;
 using System.Collections.Generic;
@@ -33,14 +35,14 @@ namespace GameOperations
 
             userServices.Add(user1);
             gameServices.Add(game1);
-            //ICampaignServices campaign = new BlackFridayCampaign();
-            //campaign.CalculateCampaign(game1, campaign);
+            ICampaignService campaign = new BlackFriday();
+            campaign.CalculateCampaign(campaign,game1);
 
 
-            //OrderServices orderService = new OrderServices();
-            //orderService.Buy(user1, game1);
+            OrderServices orderService = new OrderServices();
+            orderService.Buy(user1, game1);
 
-            //userServices.ShowUser();
+            userServices.ShowUser();
             gameServices.ShowGame();
             Console.ReadKey();
 
