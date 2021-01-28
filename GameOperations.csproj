@@ -43,24 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Campaign\BlackFriday.cs" />
-    <Compile Include="Campaign\NewYearDiscount.cs" />
-    <Compile Include="Campaign\Student.cs" />
-    <Compile Include="Interfaces\ICampaignService.cs" />
-    <Compile Include="Interfaces\ILoggerService.cs" />
-    <Compile Include="Interfaces\IGame.cs" />
-    <Compile Include="Interfaces\IOperations.cs" />
-    <Compile Include="Managers\BuyGameManager.cs" />
-    <Compile Include="Managers\GameManager.cs" />
-    <Compile Include="Managers\PlayerManager.cs" />
+    <Compile Include="Interfaces\IGameService.cs" />
+    <Compile Include="Interfaces\IUserServices.cs" />
+    <Compile Include="Interfaces\IUserValidationService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Property\Admin.cs" />
-    <Compile Include="Property\BuyerPerson.cs" />
     <Compile Include="Property\Game.cs" />
-    <Compile Include="Interfaces\IPerson.cs" />
-    <Compile Include="Property\Person.cs" />
-    <Compile Include="Property\Player.cs" />
+    <Compile Include="Property\User.cs" />
+    <Compile Include="Services\GameService.cs" />
+    <Compile Include="Services\UserServices.cs" />
+    <Compile Include="Services\UserValidationService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

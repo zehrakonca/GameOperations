@@ -1,4 +1,6 @@
-﻿﻿using System;
+﻿using GameOperations.Property;
+using GameOperations.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,33 +12,35 @@ namespace GameOperations
     {
         static void Main(string[] args)
         {
-            UserServices userServices = new UserServices(new ValidationServices());
+            UserServices userServices = new UserServices(new UserValidationService());
             User user1 = new User()
             {
-                UserID = 1,
-                Name = "ZEHRA",
+                ID = 1,
+                FirstName = "ZEHRA",
                 LastName = "KONCA",
                 BirthYear = 1996,
                 IdentityNumber = 12345611111
 
             };
-            GameServices gameServices = new GameServices();
+            GameService gameServices = new GameService();
             Game game1 = new Game()
             {
-                gameID = 1,
+                ID = 1,
                 gameName = "Baby Shark In Danger",
                 gamePrice = 100,
                 gamePublisher = "Shark Games"
             };
 
-            ICampaignServices campaign = new BlackFridayCampaign();
-            campaign.CalculateCampaign(game1, campaign);
+            userServices.Add(user1);
+            gameServices.Add(game1);
+            //ICampaignServices campaign = new BlackFridayCampaign();
+            //campaign.CalculateCampaign(game1, campaign);
 
 
-            OrderServices orderService = new OrderServices();
-            orderService.Buy(user1, game1);
+            //OrderServices orderService = new OrderServices();
+            //orderService.Buy(user1, game1);
 
-            userServices.ShowUser();
+            //userServices.ShowUser();
             gameServices.ShowGame();
             Console.ReadKey();
 
